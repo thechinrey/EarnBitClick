@@ -15,15 +15,46 @@
         h1 {
             color: #ff8c00;
         }
-        a {
-            color: #0066cc;
-            text-decoration: none;
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #ff8c00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #e67e00;
         }
     </style>
 </head>
 <body>
     <h1>Welcome to EarnBitClick!</h1>
     <p>Earn cryptocurrency by viewing ads, completing surveys, and more.</p>
-    <p>Stay tuned for more updates!</p>
+
+    <h2>Sign Up Now</h2>
+    <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <input type="submit" value="Sign Up">
+    </form>
+
+    <p>Already have an account? <a href="#">Log In</a></p>
 </body>
 </html>
